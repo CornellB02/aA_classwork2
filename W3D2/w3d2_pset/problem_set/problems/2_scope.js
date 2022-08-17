@@ -8,7 +8,7 @@ function bar(foo) {
   return foo + 65;
 }
 
-console.log(foo);     // What is foo on this line?// foo
+console.log(foo);     // What is foo on this line?// 5
 console.log(bar(5));  // What is bar() on this line?// 70
-console.log(foo);     // What is foo on this line?// foo
+console.log(foo);     // What is foo on this line?// 5
 console.log(bar(5));  // What is bar() on this line? // 70
