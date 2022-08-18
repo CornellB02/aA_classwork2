@@ -1,10 +1,10 @@
-// function printTen() {
-//     for(num = 0; num <= 10; num += 1) {
-//         console.log(num)
-//     }
-// }
+function printTen() {
+    for(num = 0; num <= 10; num += 1) {
+        console.log(num)
+    }
+}
 
-// printTen();
+printTen();
 
 // const logBetween = (lownum, highnum) => {
 //     for (let i = lownum; i <= highnum; i++) {
@@ -120,18 +120,18 @@
 // // isFactorOf(22, 7); // => false
 
 
-function fizzBuzz(num) {
-    for(let i = 0; i<= num; i++) {
-        if ((i % 3 === 0 || i % 5 === 0) 
-        && !(i % 3 === 0 && i % 5 === 0)) {
-            console.log(i)
-        }
+// function fizzBuzz(num) {
+//     for(let i = 0; i<= num; i++) {
+//         if ((i % 3 === 0 || i % 5 === 0) 
+//         && !(i % 3 === 0 && i % 5 === 0)) {
+//             console.log(i)
+//         }
          
-    }
-}
+//     }
+// }
 
 
-fizzBuzz(40)
+// fizzBuzz(40)
 
 // 5
 // 6

@@ -15,15 +15,20 @@ countRepeats('hellobootcampprep'); //=> 4
 ***********************************************************************/
 
 function countRepeats(string) {
-    let count = {};
-
+    let letters = {}
+    let count = 0
     for (let i = 0; i < string.length; i++) {
         let char = string[i]
         
-        if (count[char] === undefined) {
-            count[char] = 1; 
+        if (letters[char] === undefined) {
+            letters[char] = 1; 
         } else {
-            count[char] += 1
+            letters[char] += 1
+        }
+    }
+    for (let key in letters){
+        if(letters[key] > 1){
+            count++
         }
     }
     return count
@@ -34,5 +39,10 @@ console.log(countRepeats('alvin'))
 console.log(countRepeats('pops'))
 console.log(countRepeats('mississippi'))
 console.log(countRepeats('hellobootcampprep'))
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = countRepeats;
+
+
+
