@@ -14,7 +14,7 @@ function variableNameify(words) {
   let str = ''
   for (i = 0; i < words.length; i++){
     let word = words[i]
-    let first = word.toLowerCase()
+    let first = word[0].toLowerCase()
     let upperWord = word[0].toUpperCase() + word.slice(1).toLowerCase()
     // let letter = word[i]
     if (i === 0){

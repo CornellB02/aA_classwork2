@@ -29,8 +29,8 @@
 // }
   
 // let sym = plusFive(100)
-// console.log(sym)
-// console.log(plusFive(100))
+console.log(sym)
+console.log(plusFive(100))
 
 
 // function threeOrSeven(num) {
