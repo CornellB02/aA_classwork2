@@ -170,3 +170,54 @@ function maxValue(array){
 console.log(maxValue([12, 6, 43, 2]))
 console.log(maxValue([]))
 console.log(maxValue([-4, -10, 0.43]))
+
+// Write a function `myIndexOf(array, target)` that takes in an array of
+// numbers and a target number as arguments. It should return the index value
+// of the target if it is present in the array or -1 if it is not present.
+//
+// CONSTRAINT: Do not use the indexOf method.
+//
+// Examples:
+//
+// myIndexOf([1,2,3,4],4) => 3
+// myIndexOf([5,6,7,8],2) => -1
+
+function myIndexOf(array, target){
+    for(let i = 0; i < array.length; i++){
+        let ele = array[i]
+
+        if (target === ele){
+            return i
+        }
+    }
+    return -1
+}
+
+console.log(myIndexOf([1,2,3,4],4)) //=> 3)
+console.log(myIndexOf([5,6,7,8],2))
+
+
+// Write a function `factorArray(array, number)` that takes in an array of
+// numbers and a number and returns an array of all the factors.
+//
+// Examples:
+//
+// factorArray([2,3,4,5,6],20) => [2,4,5]
+// factorArray([2,3,4,5,6],35) => [5]
+// factorArray([10,15,20,25],5) => []
+
+function factorArray(array, number){
+    let newArray = []
+    for (let i = 0; i < array.length; i++){
+        num = array[i]
+        if (number % num === 0){
+            newArray.push(num)
+        }
+    }
+    return newArray
+}
+
+console.log(factorArray([2,3,4,5,6],20))
+console.log(factorArray([2,3,4,5,6],35))
+console.log(factorArray([10,15,20,25],5))
+
