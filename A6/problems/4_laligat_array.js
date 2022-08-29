@@ -36,8 +36,6 @@ function isPrime(num) {
 
 }
 
-
-
 console.log(laligatArray([1, 2, 3, 4, 5]))
 
 function laligatArray(array) {
