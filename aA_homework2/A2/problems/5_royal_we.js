@@ -22,7 +22,7 @@ function royalWe(sentence) {
     } else if (sen[i] === "my") {
       sen[i] = "our"
     } else if (sen[i] === "me") {
-      sen[i] = "our"
+      sen[i] = "us"
     }
   }
     return sen.join(' ')
