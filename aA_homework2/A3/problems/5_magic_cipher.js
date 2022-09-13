@@ -11,11 +11,29 @@ magicCipher("where are you?" , { v : "l", '?' : "!"}) => "where are you!"
 magicCipher("twmce" , { m : "n", t : "d", w : "a"}) => "dance"
 *******************************************************************************/
 
-function magicCipher(sentence, cipher){
+// function magicCipher(sentence, cipher){
+//   let letter = sentence.split("")
+//   arr = []
+
+//   for (i = 0; i < letter.length; i ++){
+//     let char = letter[i]
+
+//     if (cipher[char] !== undefined) {
+//       arr.push(cipher[char])
+
+//     } else {
+//       arr.push(char)
+//     }
+
+//   }
+// return arr.join(' ')
+// }
+
+function magizzyChipher(sentence, cipher){
   let letter = sentence.split("")
   arr = []
 
-  for (i = 0; i < letter.length; i ++){
+  for(let i = 0; i < letter.length; i++){
     let char = letter[i]
 
     if (cipher[char] !== undefined) {
@@ -26,11 +44,12 @@ function magicCipher(sentence, cipher){
     }
 
   }
-return arr.join('')
+  return arr.join('')
 }
 
 
-console.log(magicCipher("add me on facebook" , { a : "c", d : "q"})) //=> "cqq me on fccebook"
-console.log(magicCipher("twmce" , { m : "n", t : "d", w : "a"}))// => "dance"
+
+console.log(magizzyChipher("add me on facebook" , { a : "c", d : "q"})) //=> "cqq me on fccebook"
+// console.log(magicCipher("twmce" , { m : "n", t : "d", w : "a"}))// => "dance"
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = magicCipher;
+// module.exports = magicCipher;

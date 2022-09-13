@@ -15,7 +15,7 @@ function minMaxDifference(array){
  let min = array[0]
  let sum = 0
 
-for (let i = 0; i < array.length; i++){
+for (let i = 0; i <= array.length; i++){
   let num = array[i]
 
   if (num > max){
@@ -31,7 +31,7 @@ for (let i = 0; i < array.length; i++){
 }
 console.log(minMaxDifference([1,2,3,4,5]))// => 4
 console.log(minMaxDifference([5,4,3,2,1])) //=> 4
-console.log(minMaxDifference([4,2,5,1,-5]))// => 10console.log(
+console.log(minMaxDifference([4,2,5,1,-5]))// => 10
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-// module.exports = minMaxDifference;
+module.exports = minMaxDifference;

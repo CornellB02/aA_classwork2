@@ -13,7 +13,7 @@ myIndexOf(["a", "b", "c"], "d") => -1
 
 function myIndexOf(array, ele){
   for (i = 0; i < array.length; i++){;
-    arr1 = array[i];z
+    arr1 = array[i];
     
     if (arr1 === ele){
       return i

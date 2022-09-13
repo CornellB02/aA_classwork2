@@ -29,5 +29,15 @@ function isUniqueAnagram(word1, word2) {
   return true;
 }
 
+
+multiplictive constent  
+
+O(n+n)
+O(2n)
+
+
+
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = isUniqueAnagram;

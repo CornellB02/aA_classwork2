@@ -57,21 +57,21 @@ console.log(bubbleSort([3,5,21,67,52,71,8]))
 //     return array
 // }
 
-// function bubbleSort(array) {
+function bubbleSort(array) {
 
-//     let sorted = false;
-//     while (!sorted){
+    let sorted = false;
+    while (!sorted){
 
-//         sorted = true 
-//         for (let i = 0; i < array.length; i++){
+        sorted = true 
+        for (let i = 0; i < array.length; i++){
 
-//             if (array[i] > array[i + 1]){
-//                 [array[i],array[i+1]] = [array[i+1],array[i]]
-//             }
-//         }
-//     }
-//     return array
-// }
+            if (array[i] > array[i + 1]){
+                [array[i],array[i+1]] = [array[i+1],array[i]]
+            }
+        }
+    }
+    return array
+}
 
 // function bubbleSort(array) {
 
