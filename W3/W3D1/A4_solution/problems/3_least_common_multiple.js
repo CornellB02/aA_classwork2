@@ -10,7 +10,7 @@ leastCommonMultiple(24, 26) => 312
 *******************************************************************************/
 
 function leastCommonMultiple(num1, num2) {
-  var i = num1;
+  let i = num1;
 
   while(true) {
     if (i % num2 === 0) {
@@ -18,8 +18,12 @@ function leastCommonMultiple(num1, num2) {
     }
 
     i += num1;
+
   }
+  
 }
+
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = leastCommonMultiple;

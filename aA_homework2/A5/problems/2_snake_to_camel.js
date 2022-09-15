@@ -13,8 +13,21 @@ snakeToCamel('BOOtcamp_PREP_iS_cOol'); // => 'BootcampPrepIsCool'
 *******************************************************************************/
 
 function snakeToCamel(str) {
-  // your code here...
+let words = str.split('_')
+let newStr = ''
+for (let i = 0; i < words.length; i++){
+  let word = words[i]
+  let capLet = word[0].toUpperCase()
+  let smallEnd = word.slice(1).toLowerCase()
+  newStr += capLet + smallEnd
 }
+return newStr
+}
+
+console.log(snakeToCamel('snakes_go_hiss'))
+console.log(snakeToCamel('say_hello_world'))
+console.log(snakeToCamel('bootcamp_prep_is_cool'))
+console.log(snakeToCamel('BOOtcamp_PREP_iS_cOol'))
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = snakeToCamel;

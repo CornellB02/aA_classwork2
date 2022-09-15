@@ -10,14 +10,15 @@ leastCommonMultiple(24, 26) => 312
 *******************************************************************************/
 
 function leastCommonMultiple(num1, num2) {
-  let i = num1;
+    let i = num1 
 
-  while (true) {
-    if (i % num2 === 0) {
-      return i;
+    while (true){
+        if (i % num2 === 0){
+            return i 
+        }
+        i += num1
     }
-    i += num1;
-  }
+
 }
 
 console.log(leastCommonMultiple(2, 3))

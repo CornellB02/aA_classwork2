@@ -11,21 +11,20 @@ longestWord(''); // => ''
 *******************************************************************************/
 
 function longestWord(sentence) {
-  let words = sentence.split(' ')
-  let longestWord = ''
+    let sen = sentence.split(' ')
+    let longest = ''
+    for(let i = 0; i < sen.length; i++){
+        let word = sen[i]
+        if(word.length > longest.length){
+            longest = word
+     
+         }
 
-for (let i = 0; i < words.length; i++) {
-  let word = words[i]
-
-  if (word.length >= longestWord.length){
-    longestWord = word
-
-  }
-}
-return longestWord
-}
-
+            }
+            return longest
+        }
+  
 console.log(longestWord('app academy is cool'))
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = longestWord;
+// module.exports = longestWord;

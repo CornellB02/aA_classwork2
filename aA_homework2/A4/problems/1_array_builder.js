@@ -13,15 +13,12 @@ arrayBuilder({}); //=> []
 function arrayBuilder(count) {
   let arr = []
   for (let key in count){
-    for (let i = 0; i < count[key]; i++){
-      // console.log(key)
-      arr.push(key)
-      // console.log(arr)
+    for(let i = 0; i < count[key]; i++){
+        arr.push(key)
     }
   }
   return arr
 }
-
 console.log(arrayBuilder({'cats': 2, 'dogs': 1}))
 
 

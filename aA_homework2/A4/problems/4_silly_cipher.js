@@ -13,9 +13,20 @@ sillyCipher("twmce", { m : "n", t : "d", w : "a"}) //=> 'dan..''
 *******************************************************************************/
 
 function sillyCipher(sentence, cipher){
-  // your code here...
-
+  let arr = []
+  for (let i = 0; i < sentence.length; i++){
+    let ele = sentence[i]
+    // console.log(cipher[ele])
+    if(cipher[ele] !== undefined){
+      arr.push(cipher[ele])
+    } else {
+      arr.push('.')
+    }
+  }
+  return arr.join('')
 }
 
+
+console.log(sillyCipher("apple" , { a : "c", p : "x", l : "r", e : "o"}))
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = sillyCipher;

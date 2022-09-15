@@ -24,6 +24,11 @@ var students = [
 ];
 
 passingStudents(students); // => [ 'Kush', 'Ned' ]
+
+assign new array 
+loop thru students
+loop thru grades 
+
 *******************************************************************************/
 
 
@@ -45,28 +50,25 @@ var students = [
   }
 ];
 
-passingStudents(students); // => [ 'Kush', 'Ned' ]
+// passingStudents(students); // => [ 'Kush', 'Ned' ]
+
 
 function passingStudents(students) {
-  let array = []
-  total = 0
-    for(let key in students){
-      let student = students[key]
-      let grade = student.grades
-      for (let i = 0; i < grade.length; i++){
-        obj = grade[i]
-        console.log(obj.score)
-        
-
-        // console.log(score)
-      }
-      let score = grade[key].score
-      total += score 
-      // console.log(total)
+  let arr = []
+  let total = 0
+  for (let key in students){
+    let student = students[key]
+    let sGrades = student.grades
+    for (let i = 0; i < sGrades.length; i++){
+      obj = sGrades[i]
+      console.log(obj)
     }
+    let score = grade[key].score
+    total += score
+  }
 }
 
-console.log(passingStudents(students))
 
+console.log(passingStudents(students))
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = passingStudents;

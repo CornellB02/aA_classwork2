@@ -12,30 +12,29 @@ hipsterfy("turtle cheeseburger fries"); // => "turtl cheeseburgr fris"
 *******************************************************************************/
 
 function hipsterfy(sentence) {
-  let newStr = ""
-  let sen = sentence.split(" ")
+let sen = sentence.split(" ")
+let str = ""
 
-  for(let i = 0; i < sen.length; i++ ){
-    // console.log(sen) // length = 3
-    let word = sen[i] // i = 3
-    // console.log(word)
-    newStr += vowelRemove(word) + (" ")
+for (let i = 0; i < sen.length; i++){
+  let word = sen[i]
+  str += vowelRemove(word) + (" ")
   }
-  return newStr
+  return str
 }
 
 function vowelRemove(word) {
   let vowels = "aeiou"
-  // let newWord = ''
-  for (let i = word.length - 1; i >= 0; i--) {
+  // let str = ""
+  for (let i = word.length - 1; i >= 0; i--){
     let char = word[i]
-    if (vowels.includes(char)){
-      // console.log(char)
-      return word.slice(0, i) + word.slice(i + 1) 
+    if(vowels.includes(char)){
+      return word.slice(0,i) + word.slice(i+1)
     }
   }
-  
+  // return str
 }
+
+
 
 console.log(hipsterfy("proper tonic panther"))
 console.log(hipsterfy("proper"))
