@@ -7,13 +7,13 @@ Examples:
 disemvowel('bootcamp'); // => 'btcmp'
 disemvowel('PREP'); // => 'PRP'
 disemvowel('hello world'); // => 'hll wrld'
-*******************************************************************************/
+********************************************************************************************/
 
-function disemvowel(string) {
-  // your code here...
-}
+// function disemvowel(string) {
+//   // your code here...
+// }
 
-function removeVowels(word){
+function disemvowel(word){
   let vowels = 'aioeuAEIOU'
   let str = ''
   for (let i = 0; i < word.length; i++){
@@ -25,10 +25,10 @@ function removeVowels(word){
   return str
 }
 
-console.log(removeVowels('bootcamp'))
-console.log(removeVowels('PREP'))
-console.log(removeVowels('hello world'))
-console.log(removeVowels('bootcamp'))
+console.log(disemvowel('bootcamp'))
+console.log(disemvowel('PREP'))
+console.log(disemvowel('hello world'))
+console.log(disemvowel('bootcamp'))
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

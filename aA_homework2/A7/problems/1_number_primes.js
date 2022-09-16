@@ -12,9 +12,33 @@ numberPrimes(100); // => 25
 *******************************************************************************/
 
 function numberPrimes(n) {
-  // your code here...
+  let primes = 0
+  for (let i = 0; i <= n; i++){
+    if(isPrime(i) === true){
+      primes ++
+    }
 
+  }
+  return primes
 }
+
+function isPrime(num){
+  if(num < 2){
+    return false 
+  }
+  for (let i = 2; i < num; i++){
+    if (num % i === 0){
+      return false 
+    }
+  }
+  return true
+}
+
+console.log(numberPrimes(100))
+console.log(numberPrimes(12))
+console.log(numberPrimes(20))
+console.log(numberPrimes(10))
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = numberPrimes;

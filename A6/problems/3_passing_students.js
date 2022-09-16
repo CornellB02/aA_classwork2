@@ -49,21 +49,24 @@ passingStudents(students); // => [ 'Kush', 'Ned' ]
 
 function passingStudents(students) {
   let array = []
-  total = 0
-    for(let key in students){
-      let student = students[key]
+  // let total = 0
+    for(let student of students){
+      // key = 0
+      let total = 0
+      // let student = students[key]
       let grade = student.grades
+
       for (let i = 0; i < grade.length; i++){
         obj = grade[i]
-        console.log(obj.score)
-        
-
-        // console.log(score)
+        total += obj.score
       }
-      let score = grade[key].score
-      total += score 
-      // console.log(total)
+
+      let avg = total / grade.length
+      if(avg >= 70){
+        array.push(student.name)
+      }
     }
+    return array
 }
 
 console.log(passingStudents(students))
