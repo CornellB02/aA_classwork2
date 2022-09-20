@@ -15,13 +15,16 @@ longestBigram("his last assessment is fun"); // => 'last assessment'
 function longestBigram(sentence) {
   let words = sentence.split(' ')
   let longest = ''
+  
   for (let i = 0; i < words.length; i++){
     let word = words[i]
     let number = words.length 
     let nextWord = word[i + 1]
     let current2 = word + ' ' + nextWord
+
     if(current2.length > longest.length){
       longest = current2
+
     }
 
   }

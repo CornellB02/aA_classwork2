@@ -63,10 +63,43 @@ function passingStudents(students) {
       obj = sGrades[i]
       console.log(obj)
     }
-    let score = grade[key].score
+    let score = obj[key].score
     total += score
   }
 }
+
+var students = [
+  {
+    "name": "Kush",
+    "id": 12345,
+    "grades": [{"id": 0, "score": 65}, {"id": 1, "score": 75}, {"id": 2, "score": 85}]
+  },
+  {
+    "name": "Ned",
+    "id": 55555,
+    "grades": [{"id": 0, "score": 100}, {"id": 1, "score": 100}, {"id": 2, "score": 100}]
+  },
+  {
+    "name": "Haseeb",
+    "id": 94110,
+    "grades": [{"id": 0, "score": 65}, {"id": 1, "score": 60}, {"id": 2, "score": 65}]
+  }
+];
+
+console.log(passingStudents(students)); // => [ 'Kush', 'Ned' ]
+
+// function passingStudents(students){
+// let newArr = []
+
+// for (let i = 0; i < students.length; i++){
+//   let kid = students[i]
+//   let sGrades = kid.grades
+//   for (let key in sGrades){
+//     obj = sGrades[i]
+//   }
+//   let score =
+//   }
+// }
 
 
 console.log(passingStudents(students))

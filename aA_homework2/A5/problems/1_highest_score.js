@@ -65,7 +65,27 @@ function highestScore(students) {
 
 console.log(highestScore(students));
 
+// var students = [
+//   {name: 'Alvin Zablan', id: 128, score: -42},
+//   {name: 'Eliot Bradshaw', id: 32, score: 57},
+//   {name: 'Tommy Duek', id: 2, score: 99},
+//   {name: 'Fred Sladkey', id: 256, score: 94}
+//  ];
 
+// function highestScore(students) {
+//   let newStr = ''
+//   let highScore = students[0].score
+//   let id = students[0].id
+//   let value = 0
+//   for (let i = 0; i < students.length; i++){
+//     if(students[i].score > highScore){
+//       highScore = students[i].score 
+//       id = students[i].id
+//       value = i
+//     }
+//   }
+  
+// }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = highestScore;

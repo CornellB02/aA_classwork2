@@ -34,8 +34,8 @@ function isPrime(num) {
         
       }
     }
-    return i
   }
+  return i
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/

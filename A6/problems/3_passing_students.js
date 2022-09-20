@@ -27,7 +27,7 @@ passingStudents(students); // => [ 'Kush', 'Ned' ]
 *******************************************************************************/
 
 
-var students = [
+ students = [
   {
     "name": "Kush",
     "id": 12345,
@@ -48,25 +48,25 @@ var students = [
 passingStudents(students); // => [ 'Kush', 'Ned' ]
 
 function passingStudents(students) {
-  let array = []
+  let array = []// new arr
   // let total = 0
-    for(let student of students){
+    for(let student of students){ // key into students while making student our variable for the objects(elements) in the array
       // key = 0
-      let total = 0
+      let total = 0 // set a total for each of the objects 
       // let student = students[key]
-      let grade = student.grades
+      let grade = student.grades // key into the grades value
 
-      for (let i = 0; i < grade.length; i++){
-        obj = grade[i]
-        total += obj.score
+      for (let i = 0; i < grade.length; i++){ // there is an array as the value of the grades so we need to loop thru the array
+        obj = grade[i] // set obj as each obj(element) in the arrsy of grades 
+        total += obj.score//increase the total by each number(score) we see in the array of grades
       }
 
-      let avg = total / grade.length
-      if(avg >= 70){
-        array.push(student.name)
+      let avg = total / grade.length // multiply the total by the amount of number of grades we added
+      if(avg >= 70){ // set a condition that if the avg number is larger or equal to 70
+        array.push(student.name) // we push the current student name into the new array
       }
     }
-    return array
+    return array  // return the new full array
 }
 
 console.log(passingStudents(students))

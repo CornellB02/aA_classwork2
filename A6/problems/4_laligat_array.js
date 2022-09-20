@@ -51,6 +51,38 @@ function laligatArray(array) {
 }
 
 
+// For example, the laligat sum of 10 is: 2 + 3 + 5 + 7 = 17
+
+// Examples:
+
+// function laligatArray(array){
+
+// }
+
+// function primeSum(num){
+//   sum = 0
+//   for (let i = 0; i < num; i++){
+//     let ele = num[i]
+//     if(isPrizzy(ele) === true){
+
+//     }
+//   }
+// }
+
+// function isPrizzy(num) {
+//   if (num < 2){
+//     return false 
+//   }
+//   for (let i = 2; i < num; i++){
+//     if(num % i === 0){
+//       return false 
+//     }
+//   }
+//   return true
+// }
+// laligatArray([10, 11, 20, 15]); // => [ 17, 28, 77, 41 ]
+// laligatArray([1, 2, 3, 4, 5]); // => [ 0, 2, 5, 5, 10 ]
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = laligatArray;

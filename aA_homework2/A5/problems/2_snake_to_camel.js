@@ -24,6 +24,16 @@ for (let i = 0; i < words.length; i++){
 return newStr
 }
 
+function snakeCase(str){
+  let newStr = ''
+  let words = str.split(' ')
+  for(let i = 0; i < words.length; i++){
+    
+  }
+}
+
+
+
 console.log(snakeToCamel('snakes_go_hiss'))
 console.log(snakeToCamel('say_hello_world'))
 console.log(snakeToCamel('bootcamp_prep_is_cool'))
