@@ -16,7 +16,12 @@ Difficulty: Medium
 *************************************************************************************/
 
 function isPowerOfTwo(num) {
-    while ()
+    if(num === 0) return false;
+
+    while(num % 2 === 0){
+        num = num/2
+    }
+    return num === 1
 }
 
 /******************** DO NOT MODIFY ANYTHING UNDER THIS LINE *************************/

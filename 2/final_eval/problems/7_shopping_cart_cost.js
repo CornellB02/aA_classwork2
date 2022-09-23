@@ -17,9 +17,21 @@ shoppingCartCost(cart2, prices); // => 11
 Difficulty: Medium
 *************************************************************************************/
 
+let prices = {bread: 4, butter: 6, milk: 3, eggs: 7, celery: 1};
+let cart1 = {bread : 2, milk: 1, eggs : 1};
+let cart2 = {milk: 2, celery: 5};
+
+shoppingCartCost(cart1, prices); // => 18
+shoppingCartCost(cart2, prices); // => 11
+
+
 function shoppingCartCost(cart, prices) {
-    for (let number in prices)
+    for (let number in prices) {
+        console.log(numbers)
+    }
 }
+
+console.log(shoppingCartCost(cart1, prices))
 
 /******************** DO NOT MODIFY ANYTHING UNDER THIS LINE *************************/
 

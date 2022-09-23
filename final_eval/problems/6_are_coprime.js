@@ -21,10 +21,9 @@ Difficulty: Medium
 function areCoprime(num1, num2) {
 
  for (let i = 2; i < num1; i++){
-  let  = num1[i]
+  let num = num1[i]
   if ((num % num1 === 0) && (num % num2 === 0)){
     return false 
-  } else {
 
   }
 

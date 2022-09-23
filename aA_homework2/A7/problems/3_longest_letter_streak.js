@@ -18,8 +18,22 @@ longestLetterStreak("YYYYY", ["Z", "K", "Y"]); // => 5
 *******************************************************************************/
 
 function longestLetterStreak(str, searchLetters) {
-  let 
+  let longest = 0
+  let streak = 0
+  for (let i = 0; i < str.length; i++){
+    if(searchLetters.inclues(str[i]))
+      streak += 1
+      if(streak > longest){
+        longest = streak
+      } else {
+        streak = 0
+      }
+  }
+  return longest
 }
+
+
+console.log(longestLetterStreak("ACCA", ["C"]))
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 module.exports = longestLetterStreak;

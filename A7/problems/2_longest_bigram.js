@@ -30,6 +30,8 @@ function longestBigram(sentence) {
     }
   
 
+    
+
 
 
 // function charCount(word) {

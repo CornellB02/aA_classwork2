@@ -47,21 +47,22 @@ function pyramidScheme(base) {
   let arr = [base]
   while (arr[0].length > 1){
     let prev = arr[0]
-    let next = func(prev)
+    let next = buildlevel(prev)
 
     arr.unshift(next)
   } 
-
+return arr
 }
 
 function buildlevel (level) {
   arr = []
   for (let i = 0; i < level.length - 1; i++){
-    arr.push(level[i]+level[i + 1]){
-       
-    }
+    arr.push(level[i]+level[i + 1])
   }
+return arr
 }
+
+console.log(pyramidScheme([2,2,2,2]))
 /******************** DO NOT MODIFY ANYTHING UNDER THIS LINE *************************/
 
 module.exports = pyramidScheme;

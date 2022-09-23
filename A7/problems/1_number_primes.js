@@ -34,7 +34,7 @@ for (let i = 2; i < num; i++){
 return true 
 }
 
-// console
+
 
 
 
