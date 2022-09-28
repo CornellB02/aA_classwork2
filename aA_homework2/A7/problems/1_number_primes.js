@@ -22,6 +22,7 @@ function numberPrimes(n) {
   return primes
 }
 
+
 function isPrime(num){
   if(num < 2){
     return false 
@@ -33,6 +34,7 @@ function isPrime(num){
   }
   return true
 }
+
 
 console.log(numberPrimes(100))
 console.log(numberPrimes(12))

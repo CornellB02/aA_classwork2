@@ -26,23 +26,43 @@ var students = [
 //  highestScore(students); //=> 'TD2'
 
 
+
 function highestScore(students) {
-    let str = ''
-    let highest = students[0].score
-    let value = 0
-    let id = students[0].id
-    for (let i = 0; i < students.length; i++){
-      if (students[i].score > highest){
-        console.log(value)
-        value = i
-        highest = students[i].score
-        id = students[i].id
-         }
-       }
-       let initals = students[value].name.split(' ')
-       str += initals[0][0] + initals[1][0] + id
-       return str 
+  let value = 0
+  let hiScore = students[0].score 
+  let id = students[0].id
+  let str = ''
+  for (let i = 0; i < students.length; i++){
+    if(students[i].score > hiScore){
+      hiScore = students[i].score
+      id = students[i].id
+      value = i
     }
+  }
+  let initals = students[value].name.split(' ')
+  str += initals[0][0] + initals[1][0] + id
+  return str
+}
+
+
+
+// function highestScore(students) {
+//     let str = ''
+//     let highest = students[0].score
+//     let value = 0
+//     let id = students[0].id
+//     for (let i = 0; i < students.length; i++){
+//       if (students[i].score > highest){
+//         console.log(value)
+//         value = i
+//         highest = students[i].score
+//         id = students[i].id
+//          }
+//        }
+//        let initals = students[value].name.split(' ')
+//        str += initals[0][0] + initals[1][0] + id
+//        return str 
+//     }
 
 
 

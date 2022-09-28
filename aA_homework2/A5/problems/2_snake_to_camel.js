@@ -13,23 +13,13 @@ snakeToCamel('BOOtcamp_PREP_iS_cOol'); // => 'BootcampPrepIsCool'
 *******************************************************************************/
 
 function snakeToCamel(str) {
-let words = str.split('_')
-let newStr = ''
-for (let i = 0; i < words.length; i++){
-  let word = words[i]
-  let capLet = word[0].toUpperCase()
-  let smallEnd = word.slice(1).toLowerCase()
-  newStr += capLet + smallEnd
-}
-return newStr
-}
-
-function snakeCase(str){
-  let newStr = ''
-  let words = str.split(' ')
-  for(let i = 0; i < words.length; i++){
-    
+  let sen = str.split('_')
+  let snake = ''
+  for (let i = 0; i < sen.length; i++){
+    let word = sen[i]
+    snake += word[0].toUpperCase() + word.slice(1).toLowerCase()
   }
+  return snake
 }
 
 

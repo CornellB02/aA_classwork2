@@ -25,10 +25,12 @@ console.log(shoppingCartCost(cart1, prices)); // => 18
 shoppingCartCost(cart2, prices); // => 11
 
 function shoppingCartCost(cart, prices) {
-    for (let key in cart1){
-        
+    let sum = 0
+    for (let items in cart){
+        // console.log(cart[items])
+        sum += cart[items] * prices[items]
     }
-    
+    return sum
 }
 
 

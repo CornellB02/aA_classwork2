@@ -31,17 +31,17 @@ var array2 = [12, 9, 20, 13, 14];
 
 
 function minValueCallback(array, cb) {
- if (!array.length){
-  return null
- }
- let lowest = array[0]
- for (let i = 0; i < array.length; i++){
-  let num = array[i]
-  if(num < lowest){
-    lowest = num
+  if(!array.length){
+    return cb(null)
   }
- }
- return cb(lowest)
+  let lowest = array[0]
+  for (let i = 0; i < array.length; i++){
+    let num = array[i]
+    if (num < lowest){
+      lowest = num
+    }
+  }
+  return cb(lowest)
 }
 
 console.log(minValueCallback(array1, Math.abs))

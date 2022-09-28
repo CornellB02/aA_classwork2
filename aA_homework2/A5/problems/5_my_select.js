@@ -21,22 +21,24 @@ var result2 = mySelect([1, 2, 4, 7, 8], isEven);
 result2; // => [ 2, 4, 8 ]
 
 make a new array 
-pass each element thru the call back 
+pass each element, index, and array thru the call back 
 if the element meets the condition of the callback
 push that element into the array 
 return the array
 *******************************************************************************/
 
 
-function mySelect(arr, cb) {
-  let array = []
-  for (let i = 0; i < arr.length; i++){
-    ele = arr[i]
-    if(cb(ele,i,arr) === true){
-      array.push(ele)
+
+
+function mySelect(array, cb) {
+  let arr = []
+  for (let i = 0; i < array.length; i++){
+    let ele = array[i]
+    if(cb(ele,i,array) === true){
+      arr.push(ele)
     }
   }
-  return array
+  return arr
 }
 
 function isUpper(str) {

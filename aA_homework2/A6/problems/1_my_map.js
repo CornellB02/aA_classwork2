@@ -40,6 +40,18 @@ function myMap(arr, cb) {
   return newArr
 }
 
+function myMap(arr, cb){
+  let newArr = []
+  for (let i = 0; i < arr.length; i++){
+    let ele = arr[i]
+    if((4 % ele !== 0) && (6 % ele !== 0)){
+      newArr.push(cb(ele))
+    } else {
+      newArr.push(ele,i)
+    }
+  }
+  return newArr
+}
 console.log(myMap([9, 25, 100, 36, 81], Math.sqrt))
 console.log(myMap([2, 4, 6, 6], multiply))
 

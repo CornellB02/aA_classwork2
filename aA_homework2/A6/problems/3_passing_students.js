@@ -66,6 +66,7 @@ function passingStudents(students) {
     let score = obj[key].score
     total += score
   }
+  return 
 }
 
 var students = [

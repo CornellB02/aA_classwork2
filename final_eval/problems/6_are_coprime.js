@@ -20,9 +20,11 @@ Difficulty: Medium
 
 function areCoprime(num1, num2) {
 
- for (let i = 2; i < num1; i++){
-  let num = num1[i]
-  if ((num % num1 === 0) && (num % num2 === 0)){
+  let smallest = num1 < num2 ? num1 : num2
+
+  
+ for (let i = 2; i <= smallest; i++){
+  if ((num1 % i === 0) && (num2 % i === 0)){
     return false 
 
   }
@@ -32,7 +34,7 @@ function areCoprime(num1, num2) {
 
 }
 
-
+console.log(areCoprime(16, 25))
 
 /******************** DO NOT MODIFY ANYTHING UNDER THIS LINE *************************/
 
