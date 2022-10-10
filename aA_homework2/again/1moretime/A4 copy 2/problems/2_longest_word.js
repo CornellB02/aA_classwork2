@@ -10,16 +10,15 @@ longestWord('bootcamp'); // => 'bootcamp'
 longestWord(''); // => ''
 *******************************************************************************/
 
-function longestWord(sentence) {
-   let words = sentence.split(' ')
+function longestWord(sentence) { 
+   let sen = sentence.split(' ')
    let longest = ''
-   for (let i = 0; i < words.length; i++){
-      // console.log(words[i])
-      if(words[i].length > longest.length){
-         longest = words[i]
+   for (let i = 0; i < sen.length; i++){
+      if(sen[i].length > longest.length){
+         longest = sen[i]
       }
-      if(longest.length === words[i].length){
-         longest = words[i]
+      if(sen[i].length === longest.length){
+         longest = sen[i]
       }
    }
    return longest

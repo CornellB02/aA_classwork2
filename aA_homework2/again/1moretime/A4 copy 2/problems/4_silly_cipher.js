@@ -11,20 +11,44 @@ sillyCipher("apple", { a : "c", p : "x"}) //=> 'cxx..'
 sillyCipher("bootcamp prep?", { o : "e", p : "q" , "?" : "!"}) //=> '.ee....q.q..q!'
 sillyCipher("twmce", { m : "n", t : "d", w : "a"}) //=> 'dan..''
 *******************************************************************************/
-
 function sillyCipher(sentence, cipher){
-let arr = []
-for (let i = 0; i < sentence.length; i++){
-  let letters = sentence[i]
-  // console.log(letters)
-  if(cipher[letters]){
-    arr.push(cipher[letters])
-  } else {
-    arr.push('.')
+  let silly = []
+  for (let i = 0; i < sentence.length; i++){
+    let char = sentence[i]
+    if(cipher[char] !== undefined){
+      silly.push(cipher[char])
+    } else {
+      silly.push('.')
+    }
   }
+  return silly
 }
-return arr.join('')
-}
+
+
+
+
+
+
+
+
+
+
+
+
+// function sillyCipher(sentence, cipher){
+//   let silly = []
+//   for (let i = 0; i < sentence.length; i++){
+//     let ele = sentence[i]
+//     if(cipher[ele] !== undefined){
+//       silly.push(cipher[ele])
+//     } else {
+//       if(cipher[ele] === undefined){
+//         silly.push('.')
+//       }
+//     }
+//   }
+//   return silly.join('')
+// }
 
 
 console.log(sillyCipher("apple" , { a : "c", p : "x", l : "r", e : "o"}))

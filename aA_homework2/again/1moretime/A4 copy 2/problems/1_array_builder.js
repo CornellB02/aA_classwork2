@@ -14,7 +14,6 @@ function arrayBuilder(count) {
   let arr = []
   for (let pets in count){
     for (let i = 0; i < count[pets]; i++){
-
       arr.push(pets)
     }
   }
